@@ -2,7 +2,7 @@
 
 - name: MaaS
   hosts: localhost
-  connection: local
+    #connection: local
   roles :
     - {role: cri.maas_worker, tags: ['mass']}
   vars:
