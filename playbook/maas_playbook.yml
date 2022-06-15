@@ -1,5 +1,6 @@
 ---
 
-- hosts: all
+- name: MaaS
+  hosts: all
   roles :
     - {role: cri.maas_worker, tags: ['mass']}
