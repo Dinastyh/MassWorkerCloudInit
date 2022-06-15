@@ -1,4 +1,7 @@
+#cloud-config
+
 runcmd:
 	- sudo apt update -y && apt install git ansible
 	- sudo git clone https://github.com/Dinastyh/MassWorkerCloudInit.git
-	- 
+	- cd playbook && ansible-playbook maas_playbook.yml -f 10
+	- echo 'Hello, World!' > /var/tmp/hello-world.txt
