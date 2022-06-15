@@ -1,6 +1,6 @@
 ---
 
 - name: MaaS
-  hosts: all
+  hosts: localhost
   roles :
     - {role: cri.maas_worker, tags: ['mass']}

@@ -3,6 +3,6 @@
 runcmd:
     - apt update -y && apt install git ansible -y
     - git clone https://github.com/Dinastyh/MassWorkerCloudInit.git
-    - cd MassWorkerCloudInit/playbook && ansible-galaxy install && ansible-playbook maas_playbook.yml -f 10
-    
-output: { all: '| tee -a /var/log/cloud-init-output.log' }
+    - cd MassWorkerCloudInit/playbook && ansible-galaxy install -g -f -r requirements.yml && ansible-playbook maas_playbook.yml -f 10
+
+output: { all: '| tee -a /var/log/MaaSWorker.log' }
