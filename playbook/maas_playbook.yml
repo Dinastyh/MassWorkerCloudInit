@@ -4,3 +4,13 @@
   hosts: localhost
   roles :
     - {role: cri.maas_worker, tags: ['mass']}
+
+maas_worker_scheduler_base_url: https://maas.example.org
+maas_worker_scheduler_url: wss://maas.example.org/ws/
+maas_worker_register_token: <WORKER_REGISTRATION_TOKEN>
+maas_version: 0.1.29
+maas_proxy_host: <HTTP_PROXY_HOST>
+maas_proxy_port: <HTTP_PROXY_PORT>
+maas_registries:
+  - url: registry.example.org
+    token: <REGISTRY_TOKEN>
