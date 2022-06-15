@@ -1,5 +1,4 @@
 #cloud-config
-
 runcmd:
     - apt update -y && apt install git ansible -y
     - git clone https://github.com/Dinastyh/MassWorkerCloudInit.git
