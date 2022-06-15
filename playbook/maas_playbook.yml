@@ -9,8 +9,8 @@
     maas_worker_scheduler_url: wss://maas.example.org/ws/
       #maas_worker_register_token: <WORKER_REGISTRATION_TOKEN>
     maas_version: 0.1.29
-      maas_proxy_host: cri.epita.fr
-      maas_proxy_port: 80
+    maas_proxy_host: cri.epita.fr
+    maas_proxy_port: 80
     maas_registries:
       - url: registry.example.org
         #token: <REGISTRY_TOKEN>
