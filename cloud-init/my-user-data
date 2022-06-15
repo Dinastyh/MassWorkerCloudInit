@@ -1,0 +1,3 @@
+runcmd:
+	- apt update -y && apt install git ansible
+	- 

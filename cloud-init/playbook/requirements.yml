@@ -1,0 +1,4 @@
+roles:
+  - name: cri.maas_worker
+    src: git+https://gitlab.cri.epita.fr/cri/iac/ansible/roles/maas_worker.git
+    version: 0.1.3
