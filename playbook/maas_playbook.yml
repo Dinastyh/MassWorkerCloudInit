@@ -1,7 +1,8 @@
 ---
 
 - name: MaaS
-  hosts: all
+  hosts: localhost
+  connection: local
   roles :
     - {role: cri.maas_worker, tags: ['mass']}
       vars:
